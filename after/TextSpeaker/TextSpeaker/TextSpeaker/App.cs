@@ -3,16 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Prism.Unity;
 using TextSpeaker.Views;
 using Xamarin.Forms;
 
 namespace TextSpeaker
 {
-    public class App : Application
+    public class App : PrismApplication
     {
-        public App()
+        protected override void OnInitialized()
         {
-            MainPage = new NavigationPage(new MainPage());
+            NavigationService.NavigateAsync("NavigationPage/MainPage");
+        }
+
+        protected override void RegisterTypes()
+        {
+            Container.RegisterTypeForNavigation<NavigationPage>();
+            Container.RegisterTypeForNavigation<MainPage>();
+            Container.RegisterTypeForNavigation<TextSpeachPage>();
         }
     }
 }

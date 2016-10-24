@@ -11,14 +11,15 @@ namespace TextSpeaker.ViewModels
 
         public ICommand SpeachCommand => new DelegateCommand(Speach);
 
-        public TextSpeachPageViewModel()
+        private readonly ITextToSpeachService _textToSpeachService;
+        public TextSpeachPageViewModel(ITextToSpeachService textToSpeachService)
         {
+            _textToSpeachService = textToSpeachService;
         }
 
         public void Speach()
         {
-            var service = DependencyService.Get<ITextToSpeachService>();
-            service.Speach(Text);
+            _textToSpeachService.Speach(Text);
         }
     }
 }

@@ -2,12 +2,11 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:TextSpeaker.ViewModels;assembly=TextSpeaker"
+             xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             mvvm:ViewModelLocator.AutowireViewModel="True"
              x:Class="TextSpeaker.Views.MainPage"
              Title="MainPage">
-  <ContentPage.BindingContext>
-    <viewModels:MainPageViewModel/>
-  </ContentPage.BindingContext>
   <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Button Text="Go to Text Speach" Clicked="Button_OnClicked"/>
+    <Button Text="Go to Text Speach" Command="{Binding NavigationCommand}"/>
   </StackLayout>
 </ContentPage>
