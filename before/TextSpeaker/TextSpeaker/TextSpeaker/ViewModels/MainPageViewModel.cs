@@ -11,7 +11,6 @@ namespace TextSpeaker.ViewModels
     {
         public MainPageViewModel()
         {
-
         }
     }
 }

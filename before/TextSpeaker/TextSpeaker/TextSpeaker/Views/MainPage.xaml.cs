@@ -10,9 +10,13 @@ namespace TextSpeaker.Views
             InitializeComponent();
         }
 
-        private void Button_OnClicked(object sender, EventArgs e)
+        private async void Button_OnClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new TextSpeachPage());
+            var result = await DisplayAlert("確認", "Text Speach画面へ遷移しますか？", "OK", "Cancel");
+            if (result)
+            {
+                await Navigation.PushAsync(new TextSpeachPage());
+            }
         }
     }
 }
