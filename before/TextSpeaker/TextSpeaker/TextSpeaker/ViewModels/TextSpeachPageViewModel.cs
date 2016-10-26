@@ -1,4 +1,5 @@
-﻿using System.Windows.Input;
+﻿using System.Threading.Tasks;
+using System.Windows.Input;
 using Prism.Commands;
 using TextSpeaker.Model;
 using Xamarin.Forms;
