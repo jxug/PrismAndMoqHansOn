@@ -8,6 +8,6 @@
     <viewModels:MainPageViewModel/>
   </ContentPage.BindingContext>
   <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Button Text="Go to Text Speach" Clicked="Button_OnClicked"/>
+    <Button Text="Go to Text Speech" Clicked="Button_OnClicked"/>
   </StackLayout>
 </ContentPage>

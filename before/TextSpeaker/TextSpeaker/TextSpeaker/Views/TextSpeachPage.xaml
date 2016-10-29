@@ -2,13 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:TextSpeaker.ViewModels;assembly=TextSpeaker"
-             x:Class="TextSpeaker.Views.TextSpeachPage"
-             Title="Text Speach">
+             x:Class="TextSpeaker.Views.TextSpeechPage"
+             Title="Text Speech">
   <ContentPage.BindingContext>
-    <viewModels:TextSpeachPageViewModel/>
+    <viewModels:TextSpeechPageViewModel/>
   </ContentPage.BindingContext>
   <StackLayout HorizontalOptions="Fill" VerticalOptions="Center" Margin="10">
     <Entry Text="{Binding Text}"/>
-    <Button Text="Say Speach!" Command="{Binding SpeachCommand}"/>
+    <Button Text="Text to Speech!" Command="{Binding SpeechCommand}"/>
   </StackLayout>
 </ContentPage>

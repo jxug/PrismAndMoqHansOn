@@ -2,9 +2,9 @@
 
 namespace TextSpeaker.Views
 {
-    public partial class TextSpeachPage : ContentPage
+    public partial class TextSpeechPage : ContentPage
     {
-        public TextSpeachPage()
+        public TextSpeechPage()
         {
             InitializeComponent();
         }
