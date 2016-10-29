@@ -1,8 +1,8 @@
 ﻿namespace TextSpeaker.Views
 {
-    public partial class TextSpeachPage
+    public partial class TextSpeechPage
     {
-        public TextSpeachPage()
+        public TextSpeechPage()
         {
             InitializeComponent();
         }

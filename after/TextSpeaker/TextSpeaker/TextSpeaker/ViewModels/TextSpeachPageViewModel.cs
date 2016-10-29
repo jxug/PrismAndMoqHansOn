@@ -5,21 +5,21 @@ using Xamarin.Forms;
 
 namespace TextSpeaker.ViewModels
 {
-    public class TextSpeachPageViewModel
+    public class TextSpeechPageViewModel
     {
         public string Text { get; set; } = "Hello, World.";
 
-        public ICommand SpeachCommand => new DelegateCommand(Speach);
+        public ICommand SpeechCommand => new DelegateCommand(Speech);
 
-        private readonly ITextToSpeachService _textToSpeachService;
-        public TextSpeachPageViewModel(ITextToSpeachService textToSpeachService)
+        private readonly ITextToSpeechService _textToSpeechService;
+        public TextSpeechPageViewModel(ITextToSpeechService textToSpeechService)
         {
-            _textToSpeachService = textToSpeachService;
+            _textToSpeechService = textToSpeechService;
         }
 
-        public void Speach()
+        public void Speech()
         {
-            _textToSpeachService.Speach(Text);
+            _textToSpeechService.Speech(Text);
         }
     }
 }

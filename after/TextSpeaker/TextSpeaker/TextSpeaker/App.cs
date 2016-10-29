@@ -20,7 +20,7 @@ namespace TextSpeaker
         {
             Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<MainPage>();
-            Container.RegisterTypeForNavigation<TextSpeachPage>();
+            Container.RegisterTypeForNavigation<TextSpeechPage>();
         }
     }
 }

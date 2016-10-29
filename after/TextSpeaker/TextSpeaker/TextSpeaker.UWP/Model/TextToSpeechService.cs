@@ -9,12 +9,12 @@ using TextSpeaker.Model;
 using TextSpeaker.UWP.Model;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(TextToSpeachService))]
+[assembly: Dependency(typeof(TextToSpeechService))]
 namespace TextSpeaker.UWP.Model
 {
-    public class TextToSpeachService : ITextToSpeachService
+    public class TextToSpeechService : ITextToSpeechService
     {
-        public async void Speach(string text)
+        public async void Speech(string text)
         {
             var mediaElement = new MediaElement();
             var synth = new SpeechSynthesizer();

@@ -3,12 +3,12 @@ using TextSpeaker.iOS.Model;
 using TextSpeaker.Model;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(TextToSpeachService))]
+[assembly: Dependency(typeof(TextToSpeechService))]
 namespace TextSpeaker.iOS.Model
 {
-    public class TextToSpeachService : ITextToSpeachService
+    public class TextToSpeechService : ITextToSpeechService
     {
-        public void Speach(string text)
+        public void Speech(string text)
         {
             var speechSynthesizer = new AVSpeechSynthesizer();
 

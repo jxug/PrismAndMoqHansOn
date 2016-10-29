@@ -7,6 +7,6 @@
              x:Class="TextSpeaker.Views.MainPage"
              Title="MainPage">
   <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Button Text="Go to Text Speach" Command="{Binding NavigationCommand}"/>
+    <Button Text="Go to Text Speech" Command="{Binding NavigationCommand}"/>
   </StackLayout>
 </ContentPage>
