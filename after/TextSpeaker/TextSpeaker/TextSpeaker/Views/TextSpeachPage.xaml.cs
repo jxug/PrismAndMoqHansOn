@@ -1,6 +1,8 @@
-﻿namespace TextSpeaker.Views
+﻿using Xamarin.Forms;
+
+namespace TextSpeaker.Views
 {
-    public partial class TextSpeechPage
+    public partial class TextSpeechPage : ContentPage
     {
         public TextSpeechPage()
         {
