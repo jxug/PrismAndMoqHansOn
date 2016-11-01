@@ -36,7 +36,7 @@ namespace TextSpeaker.Droid.Model
             }
             else
             {
-                _speaker.Speak(_text, QueueMode.Flush, Bundle.Empty, null);
+                _speaker.Speak(_text, QueueMode.Flush, new Dictionary<string, string>());
             }
         }
 
@@ -46,7 +46,7 @@ namespace TextSpeaker.Droid.Model
         {
             if (status.Equals(OperationResult.Success))
             {
-                _speaker.Speak(_text, QueueMode.Flush, Bundle.Empty, null);
+                _speaker.Speak(_text, QueueMode.Flush, new Dictionary<string, string>());
             }
         }
 
