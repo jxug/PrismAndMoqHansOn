@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{26D6564C-91A4-4593-8703-6CFC7B285438}</ProjectGuid>
+    <ProjectGuid>{F94432A7-EAC4-48B4-93B1-6F8AD9E7E341}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>TextSpeaker.Tests</RootNamespace>
     <AssemblyName>TextSpeaker.Tests</AssemblyName>
@@ -26,15 +26,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Test.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -157,6 +157,7 @@
   <ItemGroup>
     <ProjectReference Include="..\TextSpeaker\TextSpeaker.csproj">
       <Name>TextSpeaker</Name>
+      <Project>{3EF5B526-BCE5-4D67-B2C9-2A5D0746842A}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
