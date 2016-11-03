@@ -63,7 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainPageViewModelTest.cs" />
-    <Compile Include="Test.cs" />
     <Compile Include="TextSpeechPageViewModelTest.cs" />
   </ItemGroup>
   <ItemGroup>
