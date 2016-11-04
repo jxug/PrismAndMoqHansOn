@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="TextSpeaker.Views.BatteryPage"
+             Title="Battery Info">
+  <Grid Margin="20" HorizontalOptions="Fill" VerticalOptions="Start">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+    <Label Grid.Row="0" Grid.Column="0" Text="Status"/>
+    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Status}"/>
+    <Label Grid.Row="1" Grid.Column="0" Text="Persent"/>
+    <Label Grid.Row="1" Grid.Column="1" Text="{Binding RemainingChargePercent}"/>
+  </Grid>
+</ContentPage>
