@@ -7,6 +7,7 @@
              x:Class="TextSpeaker.Views.MainPage"
              Title="MainPage">
   <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Button Text="Go to Text Speech" Command="{Binding NavigationCommand}"/>
+    <Button Text="Go to Text Speech" Command="{Binding NavigationCommand}" CommandParameter="TextSpeechPage"/>
+    <Button Text="Go to Counter" Command="{Binding NavigationCommand}" CommandParameter="CounterPage"/>
   </StackLayout>
 </ContentPage>

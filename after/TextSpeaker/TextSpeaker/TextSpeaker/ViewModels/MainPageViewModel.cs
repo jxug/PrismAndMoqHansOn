@@ -15,16 +15,16 @@ namespace TextSpeaker.ViewModels
     {
         private readonly INavigationService _navigationService;
         private readonly IPageDialogService _pageDialogService;
-        public ICommand NavigationCommand => new Command(Navigate);
+        public DelegateCommand<string> NavigationCommand => new DelegateCommand<string>(Navigate);
         public MainPageViewModel(INavigationService navigationService, IPageDialogService pageDialogService)
         {
             _navigationService = navigationService;
             _pageDialogService = pageDialogService;
         }
 
-        private void Navigate()
+        private void Navigate(string navigationPage)
         {
-            _navigationService.NavigateAsync("TextSpeechPage");
+            _navigationService.NavigateAsync(navigationPage);
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Practices.Unity;
 using Prism.Unity;
+using TextSpeaker.Model;
 using TextSpeaker.Views;
 using Xamarin.Forms;
 
@@ -18,9 +20,12 @@ namespace TextSpeaker
 
         protected override void RegisterTypes()
         {
+            Container.RegisterType<ICounter, Counter>(new ContainerControlledLifetimeManager());
+
             Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<MainPage>();
             Container.RegisterTypeForNavigation<TextSpeechPage>();
+            Container.RegisterTypeForNavigation<CounterPage>();
         }
     }
 }
